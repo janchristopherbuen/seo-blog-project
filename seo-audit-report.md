@@ -166,7 +166,7 @@ Structured data helps search engines better understand page content and can impr
 
 # 10. Lighthouse Technical Audit
 
-![Lighthouse Audit](screenshots/lighthouse-seo-audit.png)
+![Lighthouse Audit](screenshots/lighthouseaudit.png)
 
 ## Analysis
 
