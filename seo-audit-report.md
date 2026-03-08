@@ -20,7 +20,7 @@ This project demonstrates the implementation of foundational technical SEO eleme
 
 Screenshot:
 
-![Lighthouse Audit](screenshots/lighthouse-seo-audit.png)
+![Lighthouse Audit](screenshots/Lighthouse Audit.png)
 
 ---
 
