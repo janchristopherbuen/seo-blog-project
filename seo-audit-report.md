@@ -4,7 +4,7 @@ SEO Blog Project
 
 ## Overview
 
-This audit evaluates the technical SEO implementation of the SEO Blog Project. The website was built as a practice project to demonstrate core SEO fundamentals including metadata configuration, crawl management, internal linking, structured data implementation, and search engine accessibility.
+This audit evaluates the technical SEO implementation of the SEO Blog Project. The site demonstrates fundamental SEO practices including metadata optimization, crawl management, internal linking, structured data implementation, and search engine accessibility.
 
 Live Website
 https://janchristopherbuen.github.io/seo-blog-project/
@@ -21,9 +21,9 @@ The page includes a descriptive HTML title tag.
 
 Example:
 
-`<title>SEO Basics Blog</title>`
+<title>SEO Basics Blog</title>
 
-The title clearly communicates the topic of the page and helps search engines understand page relevance. Well-structured titles improve search visibility and click-through rates.
+Title tags communicate the primary topic of a page to search engines and influence how pages appear in search results.
 
 ---
 
@@ -33,13 +33,13 @@ The title clearly communicates the topic of the page and helps search engines un
 
 ## Analysis
 
-The page implements a meta description summarizing the page content.
+The page includes a meta description summarizing the content.
 
 Example:
 
-`<meta name="description" content="Beginner guide to SEO including technical SEO, keyword research and website optimization.">`
+<meta name="description" content="Beginner guide to SEO including technical SEO, keyword research and website optimization.">
 
-Meta descriptions improve search result snippets and help increase click-through rates.
+Meta descriptions improve search result snippets and can increase click-through rates.
 
 ---
 
@@ -49,13 +49,13 @@ Meta descriptions improve search result snippets and help increase click-through
 
 ## Analysis
 
-The page uses a clear heading hierarchy:
+The page uses a logical heading hierarchy:
 
-* H1: SEO Basics Blog
-* H2: Learn Search Engine Optimization
-* H3: Latest Article
+H1: SEO Basics Blog
+H2: Learn Search Engine Optimization
+H3: Latest Article
 
-A structured heading hierarchy improves readability and helps search engines interpret page structure and topical relevance.
+A structured heading hierarchy helps search engines interpret content structure and improves accessibility.
 
 ---
 
@@ -65,13 +65,13 @@ A structured heading hierarchy improves readability and helps search engines int
 
 ## Analysis
 
-A canonical tag is implemented to indicate the preferred URL of the page.
+A canonical tag is implemented to define the preferred version of the page.
 
 Example:
 
-`<link rel="canonical" href="https://janchristopherbuen.github.io/seo-blog-project/">`
+<link rel="canonical" href="https://janchristopherbuen.github.io/seo-blog-project/">
 
-Canonical tags help prevent duplicate content issues and consolidate ranking signals.
+Canonical tags prevent duplicate content issues and consolidate ranking signals.
 
 ---
 
@@ -81,14 +81,14 @@ Canonical tags help prevent duplicate content issues and consolidate ranking sig
 
 ## Analysis
 
-The website includes navigation links connecting key pages:
+The site includes navigation links connecting key pages:
 
 * Home
 * Blog
 * About
 * Contact
 
-Internal linking improves crawlability and helps search engines understand site architecture and page relationships.
+Internal linking improves crawlability and helps search engines understand site architecture.
 
 ---
 
@@ -98,9 +98,9 @@ Internal linking improves crawlability and helps search engines understand site 
 
 ## Analysis
 
-Open Graph metadata is implemented to control how the page appears when shared on social media platforms.
+Open Graph metadata is implemented to control how pages appear when shared on social media platforms.
 
-Example properties:
+Implemented properties include:
 
 * og:title
 * og:description
@@ -108,7 +108,7 @@ Example properties:
 * og:url
 * og:image
 
-These tags improve social sharing previews and enhance content visibility on social platforms.
+These tags enhance social sharing previews.
 
 ---
 
@@ -118,15 +118,15 @@ These tags improve social sharing previews and enhance content visibility on soc
 
 ## Analysis
 
-The robots.txt file allows search engine crawlers to access the site and includes a reference to the XML sitemap.
+The robots.txt file allows search engine crawlers to access site pages and references the XML sitemap.
 
-Example:
+Example configuration:
 
 User-agent: *
 Allow: /
 Sitemap: /sitemap.xml
 
-This configuration helps search engines efficiently crawl and discover site content.
+This helps search engines discover and crawl content efficiently.
 
 ---
 
@@ -136,11 +136,9 @@ This configuration helps search engines efficiently crawl and discover site cont
 
 ## Analysis
 
-An XML sitemap is implemented to help search engines discover important pages.
+The XML sitemap lists the website’s URLs to help search engines discover and index pages.
 
-The sitemap lists site URLs to assist search engines with indexing and crawl coverage.
-
-Sitemaps improve search engine accessibility, particularly for new websites.
+Sitemaps improve crawl coverage, especially for small or newly published websites.
 
 ---
 
@@ -150,17 +148,60 @@ Sitemaps improve search engine accessibility, particularly for new websites.
 
 ## Analysis
 
-Structured data using JSON-LD format is implemented to describe the article content.
-
-Example schema type:
-
-Article
+Structured data using JSON-LD format is implemented for an Article schema.
 
 Key properties include:
 
+* @type: Article
 * headline
 * author
 * publisher
 * mainEntityOfPage
 
-Validation through Schema.org confirms the
+Validation confirms the schema is correctly implemented with no errors.
+
+Structured data helps search engines better understand page content and can improve eligibility for enhanced search features.
+
+---
+
+# 10. Lighthouse Technical Audit
+
+![Lighthouse Audit](screenshots/lighthouse-seo-audit.png)
+
+## Analysis
+
+A Lighthouse audit was conducted using Chrome DevTools.
+
+Results:
+
+Performance: 93
+Accessibility: 100
+Best Practices: 100
+SEO: 100
+
+The audit confirms that the website follows recommended web performance and SEO best practices.
+
+Key factors contributing to the high SEO score include:
+
+* optimized metadata
+* crawlable HTML structure
+* canonical tag implementation
+* robots.txt configuration
+* XML sitemap availability
+* structured data markup
+
+---
+
+# Conclusion
+
+The SEO Blog Project demonstrates implementation of fundamental technical SEO practices including:
+
+* metadata optimization
+* structured HTML hierarchy
+* internal linking architecture
+* crawl management through robots.txt
+* XML sitemap for indexing
+* structured data markup
+* performance validation through Lighthouse audit
+
+This project serves as a practical demonstration of foundational technical SEO skills applied within a static website.
