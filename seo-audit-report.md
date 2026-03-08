@@ -1,19 +1,32 @@
 # Technical SEO Audit Report
 
 Project: SEO Basics Blog
-URL: https://janchristopherbuen.github.io/seo-blog-project/
+Live Site: https://janchristopherbuen.github.io/seo-blog-project/
 
 ## Overview
 
-This project demonstrates the implementation of core technical SEO elements on a static website hosted via GitHub Pages.
-
-The goal is to ensure the site is crawlable, indexable, and structured properly for search engines.
+This project demonstrates the implementation of foundational technical SEO elements on a static website hosted with GitHub Pages. The objective is to ensure that the site is crawlable, indexable, and structured according to search engine best practices.
 
 ---
 
-# 1. Crawlability
+# Lighthouse Audit Results
 
-Robots.txt implemented and accessible:
+| Category       | Score |
+| -------------- | ----- |
+| Performance    | 93    |
+| Accessibility  | 100   |
+| Best Practices | 100   |
+| SEO            | 100   |
+
+Screenshot:
+
+![Lighthouse Audit](screenshots/lighthouse-seo-audit.png)
+
+---
+
+# Crawlability
+
+Robots.txt implemented and publicly accessible:
 
 /robots.txt
 
@@ -22,30 +35,30 @@ Configuration:
 User-agent: *
 Allow: /
 
-This allows search engine crawlers to access all pages.
+This allows search engine crawlers to access and crawl all pages.
 
 ---
 
-# 2. Indexability
+# Indexability
 
-XML sitemap created:
+XML sitemap implemented:
 
 /sitemap.xml
 
-Pages included:
+URLs included:
 
 * index.html
 * blog.html
 * about.html
 * contact.html
 
-This helps search engines discover and index site URLs.
+The sitemap provides a clear list of indexable pages.
 
 ---
 
-# 3. Canonicalization
+# Canonicalization
 
-Each page includes a canonical tag to prevent duplicate URL indexing.
+Each page includes a canonical URL to prevent duplicate indexing.
 
 Example:
 
@@ -53,24 +66,24 @@ Example:
 
 ---
 
-# 4. On-Page SEO Elements
+# On-Page SEO Elements
 
 Each page contains:
 
 * Title tag
 * Meta description
-* Structured heading hierarchy
+* Semantic heading structure
 * Internal navigation links
 
-Example heading structure:
+Example structure:
 
-H1 → Site Title
-H2 → Page Topic
+H1 → Site title
+H2 → Page topic
 H3 → Article section
 
 ---
 
-# 5. Social Metadata
+# Social Metadata
 
 Open Graph metadata implemented for social sharing.
 
@@ -84,11 +97,11 @@ Tags included:
 
 ---
 
-# 6. Structured Data
+# Structured Data
 
-JSON-LD Schema markup implemented.
+JSON-LD schema markup implemented.
 
-Types used:
+Schema types used:
 
 * WebSite
 * Article
@@ -97,28 +110,25 @@ Validated using Schema.org validator.
 
 ---
 
-# 7. Internal Linking Structure
+# Internal Linking Structure
 
-Navigation menu links all pages:
+Navigation links connect all pages:
 
 Home → Blog → About → Contact
 
-This ensures efficient crawl paths and site structure.
+This structure supports efficient crawling and logical site architecture.
 
 ---
 
-# 8. Technical SEO Tools Used
+# Hosting
 
-* Visual Studio Code
-* Google Lighthouse
-* Schema.org Validator
-* GitHub Pages hosting
+The site is deployed using GitHub Pages.
+
+Live URL:
+https://janchristopherbuen.github.io/seo-blog-project/
 
 ---
 
 # Conclusion
 
-The website successfully demonstrates foundational technical SEO implementation including crawlability, indexability, structured metadata, and semantic HTML structure.
-
-This project serves as a practical demonstration of entry-level technical SEO skills.
-
+The website successfully demonstrates core technical SEO practices including crawlability, indexability, canonicalization, structured metadata, and validation through Lighthouse. The project serves as a practical example of entry-level technical SEO implementation.
