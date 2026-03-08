@@ -1,93 +1,106 @@
-# Technical SEO Audit Report
+# SEO Audit Report
 
-Project: SEO Basics Blog
-Live Site: https://janchristopherbuen.github.io/seo-blog-project/
+SEO Blog Project
 
 ## Overview
 
-This project demonstrates the implementation of foundational technical SEO elements on a static website hosted with GitHub Pages. The objective is to ensure that the site is crawlable, indexable, and structured according to search engine best practices.
+This audit evaluates the technical SEO implementation of the SEO Blog Project. The website was built as a practice project to demonstrate core SEO fundamentals including metadata configuration, crawl management, internal linking, structured data implementation, and search engine accessibility.
+
+Live Website
+https://janchristopherbuen.github.io/seo-blog-project/
 
 ---
 
-# Lighthouse Audit Results
+# 1. Title Tag
 
-| Category       | Score |
-| -------------- | ----- |
-| Performance    | 93    |
-| Accessibility  | 100   |
-| Best Practices | 100   |
-| SEO            | 100   |
+![Title Tag](screenshots/title-tag.png)
 
-Screenshot:
+## Analysis
 
-![Lighthouse Audit](screenshots/LighthouseAudit.png)
-
----
-
-# Crawlability
-
-Robots.txt implemented and publicly accessible:
-
-/robots.txt
-
-Configuration:
-
-User-agent: *
-Allow: /
-
-This allows search engine crawlers to access and crawl all pages.
-
----
-
-# Indexability
-
-XML sitemap implemented:
-
-/sitemap.xml
-
-URLs included:
-
-* index.html
-* blog.html
-* about.html
-* contact.html
-
-The sitemap provides a clear list of indexable pages.
-
----
-
-# Canonicalization
-
-Each page includes a canonical URL to prevent duplicate indexing.
+The page includes a descriptive HTML title tag.
 
 Example:
 
-<link rel="canonical" href="https://janchristopherbuen.github.io/seo-blog-project/blog.html">
+`<title>SEO Basics Blog</title>`
+
+The title clearly communicates the topic of the page and helps search engines understand page relevance. Well-structured titles improve search visibility and click-through rates.
 
 ---
 
-# On-Page SEO Elements
+# 2. Meta Description
 
-Each page contains:
+![Meta Description](screenshots/meta-description.png)
 
-* Title tag
-* Meta description
-* Semantic heading structure
-* Internal navigation links
+## Analysis
 
-Example structure:
+The page implements a meta description summarizing the page content.
 
-H1 → Site title
-H2 → Page topic
-H3 → Article section
+Example:
+
+`<meta name="description" content="Beginner guide to SEO including technical SEO, keyword research and website optimization.">`
+
+Meta descriptions improve search result snippets and help increase click-through rates.
 
 ---
 
-# Social Metadata
+# 3. Heading Structure
 
-Open Graph metadata implemented for social sharing.
+![Heading Structure](screenshots/heading-structure.png)
 
-Tags included:
+## Analysis
+
+The page uses a clear heading hierarchy:
+
+* H1: SEO Basics Blog
+* H2: Learn Search Engine Optimization
+* H3: Latest Article
+
+A structured heading hierarchy improves readability and helps search engines interpret page structure and topical relevance.
+
+---
+
+# 4. Canonical Tag
+
+![Canonical Tag](screenshots/canonical-tag.png)
+
+## Analysis
+
+A canonical tag is implemented to indicate the preferred URL of the page.
+
+Example:
+
+`<link rel="canonical" href="https://janchristopherbuen.github.io/seo-blog-project/">`
+
+Canonical tags help prevent duplicate content issues and consolidate ranking signals.
+
+---
+
+# 5. Internal Linking Structure
+
+![Internal Links](screenshots/internal-links.png)
+
+## Analysis
+
+The website includes navigation links connecting key pages:
+
+* Home
+* Blog
+* About
+* Contact
+
+Internal linking improves crawlability and helps search engines understand site architecture and page relationships.
+
+---
+
+# 6. Open Graph Metadata
+
+![Open Graph Metadata](screenshots/open-graph-meta.png)
+
+## Analysis
+
+Open Graph metadata is implemented to control how the page appears when shared on social media platforms.
+
+Example properties:
 
 * og:title
 * og:description
@@ -95,40 +108,59 @@ Tags included:
 * og:url
 * og:image
 
----
-
-# Structured Data
-
-JSON-LD schema markup implemented.
-
-Schema types used:
-
-* WebSite
-* Article
-
-Validated using Schema.org validator.
+These tags improve social sharing previews and enhance content visibility on social platforms.
 
 ---
 
-# Internal Linking Structure
+# 7. Robots.txt Configuration
 
-Navigation links connect all pages:
+![Robots File](screenshots/robots-txt.png)
 
-Home → Blog → About → Contact
+## Analysis
 
-This structure supports efficient crawling and logical site architecture.
+The robots.txt file allows search engine crawlers to access the site and includes a reference to the XML sitemap.
+
+Example:
+
+User-agent: *
+Allow: /
+Sitemap: /sitemap.xml
+
+This configuration helps search engines efficiently crawl and discover site content.
 
 ---
 
-# Hosting
+# 8. XML Sitemap
 
-The site is deployed using GitHub Pages.
+![XML Sitemap](screenshots/xml-sitemap.png)
 
-Live URL:
-https://janchristopherbuen.github.io/seo-blog-project/
+## Analysis
+
+An XML sitemap is implemented to help search engines discover important pages.
+
+The sitemap lists site URLs to assist search engines with indexing and crawl coverage.
+
+Sitemaps improve search engine accessibility, particularly for new websites.
 
 ---
 
-# Conclusion
+# 9. Structured Data (Schema Markup)
 
-The website successfully demonstrates core technical SEO practices including crawlability, indexability, canonicalization, structured metadata, and validation through Lighthouse. The project serves as a practical example of entry-level technical SEO implementation.
+![Structured Data Validation](screenshots/structured-data-validation.png)
+
+## Analysis
+
+Structured data using JSON-LD format is implemented to describe the article content.
+
+Example schema type:
+
+Article
+
+Key properties include:
+
+* headline
+* author
+* publisher
+* mainEntityOfPage
+
+Validation through Schema.org confirms the
