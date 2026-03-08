@@ -169,7 +169,7 @@ Structured data helps search engines understand content and may enable rich sear
 
 # 10. Lighthouse Technical Audit
 
-![Lighthouse Audit](screenshots/lighthouse-seo-audit.png)
+![Lighthouse Audit](screenshots/lighthouseaudit.png)
 
 ## Analysis
 
